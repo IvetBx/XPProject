@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16ac72ea-2988-4801-af99-17efe4c196e1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="27iCVdsYD1tXP9qfVJht4tRJaDa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DbConnect" />
+      <recent name="Person" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="XPproject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QueryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.checkPrintingInfoAboutPatients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QueryTest" />
+      <option name="METHOD_NAME" value="checkPrintingInfoAboutPatients" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.printingIncompleteInfoAboutPatients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QueryTest" />
+      <option name="METHOD_NAME" value="printingIncompleteInfoAboutPatients" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.userWithIncorrectName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QueryTest" />
+      <option name="METHOD_NAME" value="userWithIncorrectName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.QueryTest" />
+        <item itemvalue="JUnit.QueryTest.printingIncompleteInfoAboutPatients" />
+        <item itemvalue="JUnit.QueryTest.checkPrintingInfoAboutPatients" />
+        <item itemvalue="JUnit.QueryTest.userWithIncorrectName" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16ac72ea-2988-4801-af99-17efe4c196e1" name="Default Changelist" comment="" />
+      <created>1649793544580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649793544580</updated>
+      <workItem from="1649793548167" duration="9202000" />
+      <workItem from="1649839267241" duration="7530000" />
+      <workItem from="1650325488950" duration="35000" />
+      <workItem from="1650473455592" duration="647000" />
+      <workItem from="1650722436529" duration="607000" />
+      <workItem from="1651671419191" duration="30000" />
+      <workItem from="1652953249988" duration="6762000" />
+      <workItem from="1652967108584" duration="702000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="565" y="214" key="#Project_Structure" timestamp="1652953314882">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="565" y="214" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1652953314882" />
+    <state x="67" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1649795567358">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649795567358" />
+    <state x="167" y="127" width="1653" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1649850387747">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="167" y="127" width="1653" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649850387747" />
+    <state x="413" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1652954442423">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="413" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1652954442423" />
+    <state x="362" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1650744045006">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="362" y="367" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1650744045006" />
+    <state width="1807" height="671" key="GridCell.Tab.0.bottom" timestamp="1652961235276">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="671" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235276" />
+    <state width="1807" height="671" key="GridCell.Tab.0.center" timestamp="1652961235275">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="671" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235275" />
+    <state width="1807" height="671" key="GridCell.Tab.0.left" timestamp="1652961235274">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="671" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235274" />
+    <state width="1807" height="671" key="GridCell.Tab.0.right" timestamp="1652961235275">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="671" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235275" />
+    <state x="67" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1649834562336">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649834562336" />
+    <state x="145" y="177" width="1024" height="845" key="SettingsEditor" timestamp="1651671445627">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="145" y="177" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1651671445627" />
+    <state x="304" y="285" width="442" height="535" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1649833432589">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="304" y="285" width="442" height="535" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649833432589" />
+  </component>
+</project>
