@@ -7,5 +7,5 @@ public interface Computation {
 
     double getResult(Form form) throws InvalidParameterException;
 
-    String getResultsInterpretation();
+    String getResultsInterpretation(double result);
 }

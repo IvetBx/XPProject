@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac72ea-2988-4801-af99-17efe4c196e1" name="Default Changelist" comment="" />
+    <list default="true" id="16ac72ea-2988-4801-af99-17efe4c196e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/computations/CardiacIndexCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/computations/CardiacIndexCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/computations/Computation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/computations/Computation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/computations/Computation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/computations/Computation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Form.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,20 +22,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="27iCVdsYD1tXP9qfVJht4tRJaDa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -40,10 +54,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="computations" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -51,10 +66,57 @@
       <recent name="Person" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CardiacIndexCalculatorTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="XPproject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardiacIndexCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="computations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="computations" />
+      <option name="MAIN_CLASS_NAME" value="computations.CardiacIndexCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardiacIndexCalculatorTest.getResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="computations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="computations" />
+      <option name="MAIN_CLASS_NAME" value="computations.CardiacIndexCalculatorTest" />
+      <option name="METHOD_NAME" value="getResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardiacIndexCalculatorTest.getResultsInterpretation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XPproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="computations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="computations" />
+      <option name="MAIN_CLASS_NAME" value="computations.CardiacIndexCalculatorTest" />
+      <option name="METHOD_NAME" value="getResultsInterpretation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,46 +130,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueryTest.checkPrintingInfoAboutPatients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="XPproject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QueryTest" />
-      <option name="METHOD_NAME" value="checkPrintingInfoAboutPatients" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueryTest.printingIncompleteInfoAboutPatients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="XPproject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QueryTest" />
-      <option name="METHOD_NAME" value="printingIncompleteInfoAboutPatients" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueryTest.userWithIncorrectName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="XPproject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QueryTest" />
-      <option name="METHOD_NAME" value="userWithIncorrectName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CardiacIndexCalculatorTest" />
+        <item itemvalue="JUnit.CardiacIndexCalculatorTest.getResult" />
+        <item itemvalue="JUnit.CardiacIndexCalculatorTest.getResultsInterpretation" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.QueryTest" />
-        <item itemvalue="JUnit.QueryTest.printingIncompleteInfoAboutPatients" />
-        <item itemvalue="JUnit.QueryTest.checkPrintingInfoAboutPatients" />
-        <item itemvalue="JUnit.QueryTest.userWithIncorrectName" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -132,54 +165,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="565" y="214" key="#Project_Structure" timestamp="1652953314882">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="565" y="214" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1652953314882" />
-    <state x="67" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1649795567358">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="67" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649795567358" />
-    <state x="167" y="127" width="1653" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1649850387747">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="167" y="127" width="1653" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649850387747" />
-    <state x="413" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1652954442423">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="413" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1652954442423" />
-    <state x="362" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1650744045006">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="362" y="367" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1650744045006" />
-    <state width="1807" height="671" key="GridCell.Tab.0.bottom" timestamp="1652961235276">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1807" height="671" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235276" />
-    <state width="1807" height="671" key="GridCell.Tab.0.center" timestamp="1652961235275">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1807" height="671" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235275" />
-    <state width="1807" height="671" key="GridCell.Tab.0.left" timestamp="1652961235274">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1807" height="671" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235274" />
-    <state width="1807" height="671" key="GridCell.Tab.0.right" timestamp="1652961235275">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state width="1807" height="671" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1652961235275" />
-    <state x="67" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1649834562336">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="67" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649834562336" />
-    <state x="145" y="177" width="1024" height="845" key="SettingsEditor" timestamp="1651671445627">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="145" y="177" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1651671445627" />
-    <state x="304" y="285" width="442" height="535" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1649833432589">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="304" y="285" width="442" height="535" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1649833432589" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
