@@ -236,11 +236,21 @@ public class Query {
         }
     }
 
-    public void addPatientDisease(int userId, int diseaseId) throws SQLException {
+    public void addPatientDisease(int userId, int diseaseId, String treatment) throws SQLException {
 
-        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("INSERT INTO diagnosis (patient_id, disease_id) VALUES (?, ?)")){
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("INSERT INTO diagnosis (patient_id, disease_id, treatment) VALUES (?, ?, ?)")){
             statement.setInt(1, userId);
             statement.setInt(2, diseaseId);
+            statement.setString(3, treatment);
+            statement.execute();
+        }
+    }
+
+    public void updatePersonInformation(int userId, String information) throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("UPDATE person SET information = ? WHERE id = ?")){
+            statement.setString(1, information);
+            statement.setInt(2, userId);
             statement.execute();
         }
     }

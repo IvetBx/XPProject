@@ -23,6 +23,7 @@ public class MainMenuDoctor extends Menu {
         System.out.println("* 1. Moje stretnutia      *");
         System.out.println("* 2. Vytvor voľný termín  *");
         System.out.println("* 3. Pacienti             *");
+        System.out.println("* 4. Uprav môj popis      *");
         System.out.println("* 0. Odhlásenie           *");
         System.out.println("***************************");
     }
@@ -50,6 +51,13 @@ public class MainMenuDoctor extends Menu {
         else if(option.equals("3")){
             DisplayDoctorsPatientsMenu menu = new DisplayDoctorsPatientsMenu(query, loggedUser);
             menu.run();
+            return;
+        }
+        else if(option.equals("4")){
+            System.out.println("Zadajte informácie");
+            Scanner s = new Scanner(System.in);
+            String information = s.nextLine();
+            query.updatePersonInformation(loggedUser.getId(),information);
             return;
         }
         else if(option.equals("0")){

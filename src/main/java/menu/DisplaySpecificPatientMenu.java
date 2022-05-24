@@ -39,6 +39,8 @@ public class DisplaySpecificPatientMenu extends Menu{
             System.out.println(patient.getAddress());
             System.out.println(patient.getCity());
             System.out.println(patient.getInformation());
+            System.out.println("PACIENTOVE CHOROBY");
+            query.myDiagnosis(patientId);
             return;
         }
         if(Integer.parseInt(option) == 0){

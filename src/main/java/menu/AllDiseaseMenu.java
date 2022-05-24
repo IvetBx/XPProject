@@ -6,6 +6,7 @@ import queries.Query;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AllDiseaseMenu extends Menu{
     ArrayList<Disease> diseases;
@@ -36,7 +37,10 @@ public class AllDiseaseMenu extends Menu{
             return;
         }
         if(Integer.parseInt(option) > 0 && Integer.parseInt(option) <= this.diseases.size()){
-            query.addPatientDisease(patientId,diseases.get(Integer.parseInt(option)-1).getId());
+            System.out.println("Zadajte liečbu");
+            Scanner s = new Scanner(System.in);
+            String treatment = s.nextLine();
+            query.addPatientDisease(patientId,diseases.get(Integer.parseInt(option)-1).getId(), treatment);
             return;
         }
         if(Integer.parseInt(option) == 0){

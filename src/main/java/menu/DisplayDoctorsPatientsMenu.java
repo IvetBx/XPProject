@@ -31,7 +31,6 @@ public class DisplayDoctorsPatientsMenu extends Menu{
             return;
         }
         if(Integer.parseInt(option) > 0 && Integer.parseInt(option) <= patients.size() ){
-            System.out.println("PATIENT ID JE " + patients.get(Integer.parseInt(option)-1).getId());
             DisplaySpecificPatientMenu menu = new DisplaySpecificPatientMenu(query,loggedUser,patients.get(Integer.parseInt(option)-1).getId());
             menu.run();
             return;

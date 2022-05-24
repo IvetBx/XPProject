@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac72ea-2988-4801-af99-17efe4c196e1" name="Default Changelist" comment="Menu">
+    <list default="true" id="16ac72ea-2988-4801-af99-17efe4c196e1" name="Default Changelist" comment="Vypis informacii">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menu/DisplaySpecificDoctorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/DisplaySpecificDoctorMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menu/AllDiseaseMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/AllDiseaseMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menu/DisplayDoctorsPatientsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/DisplayDoctorsPatientsMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/menu/DisplaySpecificPatientMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/DisplaySpecificPatientMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menu/MainMenuDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/MainMenuDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/queries/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queries/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/AllDiseaseMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/AllDiseaseMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/DisplayDoctorsPatientsMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/DisplayDoctorsPatientsMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/queries/Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/queries/Query.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +184,7 @@
       <workItem from="1653305927990" duration="186000" />
       <workItem from="1653306352084" duration="25704000" />
       <workItem from="1653402258234" duration="5714000" />
-      <workItem from="1653419478120" duration="2934000" />
+      <workItem from="1653419478120" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="Menu">
       <created>1653419789922</created>
@@ -187,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653419789922</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Vypis informacii">
+      <created>1653423184562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653423184562</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +219,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu" />
+    <MESSAGE value="Vypis informacii" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vypis informacii" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/XPProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1653331822069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
