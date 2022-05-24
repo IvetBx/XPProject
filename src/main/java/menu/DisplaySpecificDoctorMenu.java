@@ -33,6 +33,14 @@ public class DisplaySpecificDoctorMenu extends Menu{
             menu.run();
             return;
         }
+        if(Integer.parseInt(option) == 2){
+            Person doctor = query.getPersonById(doctorId);
+            System.out.println(doctor.getFullName());
+            System.out.println(doctor.getAddress());
+            System.out.println(doctor.getCity());
+            System.out.println(doctor.getInformation());
+            return;
+        }
         if(Integer.parseInt(option) == 0){
             exit();
             return;

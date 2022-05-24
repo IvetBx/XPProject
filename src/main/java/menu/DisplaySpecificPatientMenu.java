@@ -33,6 +33,14 @@ public class DisplaySpecificPatientMenu extends Menu{
             menu.run();
             return;
         }
+        if(Integer.parseInt(option) == 2){
+            Person patient = query.getPersonById(patientId);
+            System.out.println(patient.getFullName());
+            System.out.println(patient.getAddress());
+            System.out.println(patient.getCity());
+            System.out.println(patient.getInformation());
+            return;
+        }
         if(Integer.parseInt(option) == 0){
             exit();
             return;
