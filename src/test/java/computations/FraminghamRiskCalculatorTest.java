@@ -3,6 +3,8 @@ package computations;
 import models.Form;
 import org.junit.jupiter.api.Test;
 
+import java.security.InvalidParameterException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FraminghamRiskCalculatorTest {
@@ -17,10 +19,22 @@ class FraminghamRiskCalculatorTest {
         form.setTotalCholesterol(193.35);
         form.setHDLCholesterol(1);
         form.setSmoker(true);
+        form.setHeight(170);
+        form.setWeight(55);
+        form.setStrokeVolume(72);
+        form.setHeartRate(66);
 
         FraminghamRiskCalculator framinghamRiskCalculator = new FraminghamRiskCalculator();
         assertEquals(3.25, framinghamRiskCalculator.getRiskScoreForWoman(form), 0.1);
         assertEquals(27.45, framinghamRiskCalculator.getResult(form), 1.0);
+
+
+        Throwable exception = assertThrows(InvalidParameterException.class, () -> {
+            Form form2 = new Form();
+            FraminghamRiskCalculator framinghamRiskCalculator2 = new FraminghamRiskCalculator();
+            framinghamRiskCalculator2.getResult(form2);
+        });
+        assertEquals("Nastala chyba, dotazník nie je vyplnený!", exception.getMessage());
     }
 
     @Test

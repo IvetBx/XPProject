@@ -17,6 +17,10 @@ public class FraminghamRiskCalculator implements Computation {
 
     @Override
     public double getResult(Form form) throws InvalidParameterException {
+        if (!form.isFilled()) {
+            throw new InvalidParameterException("Nastala chyba, dotazník nie je vyplnený!");
+        }
+
         double riskScore;
         bpTreatment = getDouble(form.isBloodPressureTreatment());
         smoker = getDouble(form.isSmoker());
