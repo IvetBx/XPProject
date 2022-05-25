@@ -1,8 +1,13 @@
 package queries;
 
+import appointment.Appointment;
 import dbConnect.DbContext;
 
+import doctor.Doctor;
+import models.Disease;
 import models.Person;
+
+import javax.print.Doc;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +48,29 @@ public class Query {
 
     }
 
+
+    public void myAppointmnetsDoctor(int doctorId) throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM appointment, person WHERE doctor_id = ? AND patient_id is not null AND person.id = patient_id")){
+            statement.setInt(1, doctorId);
+            ResultSet result = statement.executeQuery();
+            while(result.next()){
+                System.out.println(result.getDate("appointment_date") + " " + result.getTime("appointment_time") + " " + result.getString("name") + " " + result.getString("surname"));
+            }
+        }
+    }
+
+    public void myAppointmnetsPatient(int patientId) throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM appointment, person WHERE patient_id = ? AND person.id = doctor_id")){
+            statement.setInt(1, patientId);
+            ResultSet result = statement.executeQuery();
+            while(result.next()){
+                System.out.println(result.getDate("appointment_date") + " " + result.getTime("appointment_time") + " " + result.getString("name") + " " + result.getString("surname"));
+            }
+        }
+    }
+
     public void myAppointmnets(int userId) throws SQLException {
 
         try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM appointment WHERE (doctor_id = ? OR patient_id = ?) AND patient_id is not null")){
@@ -50,8 +78,22 @@ public class Query {
             statement.setInt(2, userId);
             ResultSet result = statement.executeQuery();
             while(result.next()){
-                System.out.println(result.getDate("appointment_date") + " " + result.getTime("appointment_time"));
+                Person doctor = getPersonById(result.getInt("doctor_id"));
+                Person patient = getPersonById(result.getInt("patient_id"));
+                System.out.println(result.getDate("appointment_date") + " " + result.getTime("appointment_time")+ " DOKTOR: " + doctor.getFullName() + " PACIENT: " + patient.getFullName());
             }
+        }
+    }
+
+    public Person getPersonById(int userId) throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM person WHERE id = ?")){
+            statement.setInt(1, userId);
+            ResultSet result = statement.executeQuery();
+            if(!result.next()){
+                return null;
+            }
+            return new Person(result);
         }
     }
 
@@ -78,19 +120,32 @@ public class Query {
 
     }
 
-    public void doctorFreeAppointments(int doctorId) throws SQLException {
+    public ArrayList<Doctor> doctorsArray() throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM person WHERE isdoctor = true")){
+            ArrayList<Doctor> allDoctors = new ArrayList<>();
+            ResultSet result = statement.executeQuery();
+            while(result.next()){
+                allDoctors.add(new Doctor(result.getInt("id"), result.getString("name"),result.getString("surname")));
+            }
+            return  allDoctors;
+
+        }
+
+    }
+
+
+    public ArrayList<Appointment> doctorFreeAppointments(int doctorId) throws SQLException {
 
         try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM appointment WHERE doctor_id = ? AND patient_id is null")){
             statement.setInt(1, doctorId);
             ResultSet result = statement.executeQuery();
-            if(!result.next()){
-                System.out.println("Doktor " + doctorId +" nema ziaden volny termin");
-                return;
-            }
-            System.out.println( result.getInt("id") + " - " + result.getDate("appointment_date") + " " + result.getTime("appointment_time") );
+            ArrayList<Appointment> appointments = new ArrayList<>();
+
             while(result.next()){
-                System.out.println( result.getInt("id") + " - " + result.getDate("appointment_date") + " " + result.getTime("appointment_time") );
+                appointments.add(new Appointment(result.getInt("id"), result.getDate("appointment_date"), result.getTime("appointment_time")));
             }
+            return appointments;
         }
 
     }
@@ -152,14 +207,15 @@ public class Query {
 
     }
 
-    public List<Person> getMyPatients(int userId) throws SQLException {
+    public ArrayList<Person> getMyPatients(int userId) throws SQLException {
 
-        List<Person> allPatients = new ArrayList();
-        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM Doctor_Patient INNER JOIN Person WHERE doctor_id = ?")){
+        ArrayList<Person> allPatients = new ArrayList();
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM Doctor_Patient, Person WHERE doctor_id = ? AND patient_id = person.id")){
             statement.setInt(1, userId);
             ResultSet result = statement.executeQuery();
             while(result.next()){
                 Person person = new Person();
+                person.setId(result.getInt("patient_id"));
                 person.setName(result.getString("name"));
                 person.setSurname(result.getString("surname"));
                 allPatients.add(person);
@@ -168,6 +224,35 @@ public class Query {
         return allPatients;
     }
 
+    public ArrayList<Disease> allDisease() throws SQLException {
 
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("SELECT * FROM disease")){
+            ResultSet result = statement.executeQuery();
+            ArrayList<Disease> allDisease = new ArrayList<>();
+            while(result.next()){
+                allDisease.add(new Disease(result.getInt("id"), result.getString("name")));
+            }
+            return allDisease;
+        }
+    }
+
+    public void addPatientDisease(int userId, int diseaseId, String treatment) throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("INSERT INTO diagnosis (patient_id, disease_id, treatment) VALUES (?, ?, ?)")){
+            statement.setInt(1, userId);
+            statement.setInt(2, diseaseId);
+            statement.setString(3, treatment);
+            statement.execute();
+        }
+    }
+
+    public void updatePersonInformation(int userId, String information) throws SQLException {
+
+        try(PreparedStatement statement = DbContext.getConnection().prepareStatement("UPDATE person SET information = ? WHERE id = ?")){
+            statement.setString(1, information);
+            statement.setInt(2, userId);
+            statement.execute();
+        }
+    }
 
 }

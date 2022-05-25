@@ -1,4 +1,5 @@
 import dbConnect.DbContext;
+import menu.MainMenuDoctor;
 import models.Person;
 import queries.Query;
 
@@ -79,10 +80,8 @@ public class InputReader {
 
             System.out.println("USPESNE PRIHLASENY POUZIVATEL");
 
-            while(true){
-                String command = s.nextLine();
-                handleCommand(command);
-            }
+        MainMenuDoctor menu = new MainMenuDoctor(query,null);
+        menu.run();
 
     }
 
